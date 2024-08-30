@@ -1,10 +1,6 @@
 # Preview Updates in Xcode 16
 
-![mac128](Images/mac128.png) This is the starter project  for the video on the Preview Updates in Xcode 16.
-
-
-
-Release Date: October 6, 2024
+![mac128](Images/mac128.png) This is the completed source code  for the video on the Preview Updates in Xcode 16.
 
 If you want to support my work, you can - </br>
 
