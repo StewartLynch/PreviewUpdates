@@ -13,24 +13,29 @@
 // Copyright © 2024 CreaTECH Solutions. All rights reserved.
 
 import Foundation
+import SwiftData
 
-struct Person: Identifiable {
-    var id = UUID()
+@Model
+class Person {
     var firstName: String
     var lastName: String
-    
-    static var people: [Person] {
-        [
-            Person(firstName: "Stewart", lastName: "Lynch"),
-            Person(firstName: "Mark", lastName: "Moeykens"),
-            Person(firstName: "Jessie", lastName: "Linden"),
-            Person(firstName: "Sean", lastName: "Allen"),
-            Person(firstName: "Paul", lastName: "Hudson"),
-            Person(firstName: "Mikaela", lastName: "Caron"),
-            Person(firstName: "Sarah", lastName: "Reichelt"),
-            Person(firstName: "Mohammad", lastName: "Azam"),
-            Person(firstName: "Jordi", lastName: "Bruin"),
-            Person(firstName: "Danijela", lastName: "Vrzan")
-        ]
+    init(firstName: String, lastName: String) {
+        self.firstName = firstName
+        self.lastName = lastName
     }
+    
+//    static var people: [Person] {
+//        [
+//            Person(firstName: "Stewart", lastName: "Lynch"),
+//            Person(firstName: "Mark", lastName: "Moeykens"),
+//            Person(firstName: "Jessie", lastName: "Linden"),
+//            Person(firstName: "Sean", lastName: "Allen"),
+//            Person(firstName: "Paul", lastName: "Hudson"),
+//            Person(firstName: "Mikaela", lastName: "Caron"),
+//            Person(firstName: "Sarah", lastName: "Reichelt"),
+//            Person(firstName: "Mohammad", lastName: "Azam"),
+//            Person(firstName: "Jordi", lastName: "Bruin"),
+//            Person(firstName: "Danijela", lastName: "Vrzan")
+//        ]
+//    }
 }

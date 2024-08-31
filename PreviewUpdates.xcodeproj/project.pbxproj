@@ -14,6 +14,7 @@
 		BBF9020F2C817935007ACF18 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF902072C817935007ACF18 /* Person.swift */; };
 		BBF902102C817935007ACF18 /* PersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF902082C817935007ACF18 /* PersonView.swift */; };
 		BBF902112C817935007ACF18 /* PreviewUpdatesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF902092C817935007ACF18 /* PreviewUpdatesApp.swift */; };
+		BBFC41B62C824B9D00583474 /* PreviewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFC41B52C824B9700583474 /* PreviewModifiers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		BBF902072C817935007ACF18 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		BBF902082C817935007ACF18 /* PersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonView.swift; sourceTree = "<group>"; };
 		BBF902092C817935007ACF18 /* PreviewUpdatesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewUpdatesApp.swift; sourceTree = "<group>"; };
+		BBFC41B52C824B9700583474 /* PreviewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewModifiers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				BBF902062C817935007ACF18 /* PeopleListView.swift */,
 				BBF902082C817935007ACF18 /* PersonView.swift */,
 				BBF902072C817935007ACF18 /* Person.swift */,
+				BBFC41B52C824B9700583474 /* PreviewModifiers.swift */,
 				BBF902032C817935007ACF18 /* Preview Content */,
 				BBF902042C817935007ACF18 /* Assets.xcassets */,
 				BBF902052C817935007ACF18 /* Launch Screen.storyboard */,
@@ -150,6 +153,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBFC41B62C824B9D00583474 /* PreviewModifiers.swift in Sources */,
 				BBF9020E2C817935007ACF18 /* PeopleListView.swift in Sources */,
 				BBF9020F2C817935007ACF18 /* Person.swift in Sources */,
 				BBF902102C817935007ACF18 /* PersonView.swift in Sources */,

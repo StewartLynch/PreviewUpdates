@@ -13,9 +13,10 @@
 // Copyright © 2024 CreaTECH Solutions. All rights reserved.
 
 import SwiftUI
+import SwiftData
 
 struct PeopleListView: View {
-    @State private var people = Person.people
+    @Query(sort: \Person.lastName) private var people: [Person]
     var body: some View {
             NavigationStack{
                 List(people) { person in
@@ -35,6 +36,6 @@ struct PeopleListView: View {
     }
 }
 
-#Preview {
+#Preview(traits: .mockData) {
     PeopleListView()
 }

@@ -13,6 +13,7 @@
 // Copyright © 2024 CreaTECH Solutions. All rights reserved.
 
 import SwiftUI
+import SwiftData
 
 @main
 struct PreviewUpdatesApp: App {
@@ -20,6 +21,7 @@ struct PreviewUpdatesApp: App {
     var body: some Scene {
         WindowGroup {
             PeopleListView()
+                .modelContainer(for: Person.self)
         }
     }
 }

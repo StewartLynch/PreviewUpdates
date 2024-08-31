@@ -13,13 +13,14 @@
 // Copyright © 2024 CreaTECH Solutions. All rights reserved.
 
 import SwiftUI
+import SwiftData
 
 struct PersonView: View {
-    let person: Person
+    @Bindable var person: Person
     var body: some View {
-        VStack {
-            Text(person.firstName)
-            Text(person.lastName)
+        Form {
+            TextField("First name", text: $person.firstName)
+            TextField("Last Name", text: $person.lastName)
         }
         .font(.title)
             .navigationTitle("\(person.firstName) \(person.lastName)")
@@ -27,6 +28,7 @@ struct PersonView: View {
     }
 }
 
-#Preview {
-    PersonView(person: Person.people[0])
+#Preview(traits: .navEmbedded, .mockData) {
+    @Previewable @Query(sort: \Person.lastName) var people: [Person]
+    PersonView(person: people[0])
 }
